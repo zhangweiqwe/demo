@@ -3,20 +3,24 @@ package com.example.demo.controller;
 import com.alibaba.fastjson.JSONObject;
 import com.example.demo.Const;
 import com.example.demo.annotation.UserLoginToken;
+import com.example.demo.entity.Page;
 import com.example.demo.entity.Result;
 import com.example.demo.entity.User;
 import com.example.demo.service.TokenService;
 import com.example.demo.service.UserService;
 import com.example.demo.util.AESUtils;
-import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
 import java.util.List;
@@ -41,7 +45,11 @@ http://localhost:8081/user/login?id=7&password=1234
 http://localhost:8081/user/getMessage
 
 http://localhost:8081/user/getAll?pageNum=1&pageSize=3
+
+http://127.0.0.1:8081/swagger-ui.html
  */
+
+
 @Controller
 @RequestMapping("/user")
 public class UserController {
@@ -53,7 +61,7 @@ public class UserController {
     @Autowired
     TokenService tokenService;
 
-    @RequestMapping("/showUser")
+    @RequestMapping(value = "/showUser" ,method = RequestMethod.GET)
     @ResponseBody
     //public User toIndex(HttpServletRequest request, Model model){
     public Object showUser(Integer id) {
@@ -70,7 +78,7 @@ public class UserController {
         return Result.success(user);
     }
 
-    @RequestMapping("/addUser")
+    @RequestMapping(value = "/addUser",method = RequestMethod.GET)
     @ResponseBody
     public Object addUser(User user) throws Exception {
         /*User user = new User(Integer.parseInt(request.getParameter("id")),request.getParameter("user_name"),
@@ -81,7 +89,8 @@ public class UserController {
     }
 
 
-    @RequestMapping("/login")
+    @ApiOperation(value = "登录",notes = "fsdf")
+    @RequestMapping(value =  "/login",method = RequestMethod.GET)
     @ResponseBody
     public Object login(Integer id, String password) {
         JSONObject jsonObject = new JSONObject();
@@ -103,17 +112,17 @@ public class UserController {
 
     }
 
-    @RequestMapping("/getMessage")
+    @RequestMapping(value = "/getMessage",method = RequestMethod.GET)
     @ResponseBody
     @UserLoginToken
     public Object getMessage() {
         return Result.success("您已通过验证");
     }
 
-    @RequestMapping("/getAll")
+    @RequestMapping(value = "/getAll",method = RequestMethod.GET)
     @ResponseBody
     @UserLoginToken
-    public Object list(Page<User> page) {
+    public Object list(Page page) {
 
         /*ModelAndView result = new ModelAndView("index");
         List<User> countryList = userService.getAll(user);
