@@ -13,29 +13,36 @@ public class Result<T> {
 
     /**
      * 成功时候的调用
+     *
      * @param data data
-     * @param <T> t
+     * @param <T>  t
      * @return Result
      */
-    public static <T> Result<T> success(T data){
+    public static <T> Result<T> success(T data) {
         return new Result<T>(data);
+    }
+
+    public static Result success() {
+        return new Result(CodeMsg.SUCCESS);
     }
 
     /**
      * 失败时候的调用
+     *
      * @param codeMsg codeMsg
-     * @param <T> t
+     * @param <T>     t
      * @return Result
      */
-    public static <T> Result<T> error(CodeMsg codeMsg){
+    public static <T> Result<T> error(CodeMsg codeMsg) {
         return new Result<T>(codeMsg);
     }
 
     /**
      * 成功的构造函数
+     *
      * @param data data
      */
-    public Result(T data){
+    public Result(T data) {
         this.code = CodeMsg.SUCCESS.getCode();//默认200是成功
         this.msg = CodeMsg.SUCCESS.getMsg();
         this.data = data;
@@ -48,10 +55,11 @@ public class Result<T> {
 
     /**
      * 失败的构造函数
+     *
      * @param codeMsg codeMsg
      */
     private Result(CodeMsg codeMsg) {
-        if(codeMsg != null) {
+        if (codeMsg != null) {
             this.code = codeMsg.getCode();
             this.msg = codeMsg.getMsg();
         }

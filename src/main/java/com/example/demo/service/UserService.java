@@ -7,9 +7,13 @@ import java.util.Map;
 
 
 public interface UserService {
-    User getUserById(int userId);
+    int insert(User user);
 
-    void addUser(User record) throws Exception;
+    int delete(String id);
+
+    int update(User user);
+
+    User query(String id);
 
     List<User> getAll();
 

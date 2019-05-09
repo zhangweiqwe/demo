@@ -4,20 +4,17 @@ package com.example.demo.dao;
 import com.example.demo.entity.User;
 
 import java.util.List;
-import java.util.Map;
 
 public interface UserDao {
-    int deleteByPrimaryKey(Integer id);
+    int insert(User user);
 
-    int insert(User record);
+    int delete(String id);
 
-    int insertSelective(User record);
+    int update(User user);
 
-    User selectByPrimaryKey(Integer id);
-
-    int updateByPrimaryKeySelective(User record);
-
-    int updateByPrimaryKey(User record);
+    User query(String id);
 
     List<User> getAll();
+
+
 }

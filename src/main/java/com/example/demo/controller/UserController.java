@@ -1,6 +1,8 @@
 package com.example.demo.controller;
 
-import com.alibaba.fastjson.JSONObject;
+import com.auth0.jwt.JWT;
+import com.auth0.jwt.JWTVerifier;
+import com.auth0.jwt.algorithms.Algorithm;
 import com.example.demo.Const;
 import com.example.demo.annotation.UserLoginToken;
 import com.example.demo.entity.CodeMsg;
@@ -9,7 +11,6 @@ import com.example.demo.entity.Result;
 import com.example.demo.entity.User;
 import com.example.demo.service.TokenService;
 import com.example.demo.service.UserService;
-import com.example.demo.util.AESUtils;
 import com.example.demo.util.RandomValidateCodeUtil;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
@@ -18,14 +19,14 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.annotation.Resource;
 import javax.imageio.ImageIO;
-import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.util.List;
 
@@ -59,7 +60,7 @@ http://127.0.0.1:8081/user/getVerify
 @Controller
 @RequestMapping("/user")
 public class UserController {
-    public static final String RANDOM_CODE_ATTRIBUTE = "RANDOM_CODE_ATTRIBUTE";
+    public static final String AUTH_CODE_ATTRIBUTE = "RANDOM_CODE_ATTRIBUTE";
     //AuthorizationServerConfigurerAdapter
     private static final Logger LOG = LoggerFactory.getLogger(UserController.class);
     @Resource
@@ -68,122 +69,78 @@ public class UserController {
     @Autowired
     TokenService tokenService;
 
-    @RequestMapping(value = "/showUser", method = RequestMethod.GET)
+    @Autowired
+    HttpSession httpSession;
+
+
+    @RequestMapping(value = "/register", method = RequestMethod.GET)
     @ResponseBody
-    //public User toIndex(HttpServletRequest request, Model model){
-    public Object showUser(Integer id) {
-        User user = this.userService.getUserById(id);
-
-        try {
-            String str = AESUtils.aesDecodeStr(AESUtils.aesEncryptStr("cs", Const.ENCRYPTED_MSG), Const.ENCRYPTED_MSG);
-            if (Const.DEBUG)
-                LOG.info(str);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-        return Result.success(user);
-    }
-
-    @RequestMapping(value = "/addUser", method = RequestMethod.GET)
-    @ResponseBody
-    public Object addUser(User user) throws Exception {
-        /*User user = new User(Integer.parseInt(request.getParameter("id")),request.getParameter("user_name"),
-                request.getParameter("password"),Integer.parseInt(request.getParameter("age")));*/
-
-        userService.addUser(user);
-        return Result.success(user);
+    @ApiOperation(value = "注册")
+    public Object register(String id, String password) {
+        String signPassword = JWT.create().withClaim("password", password).sign(Algorithm.HMAC256(Const.ENCRYPTED_MSG));
+        return Result.success(userService.insert(new User(id, signPassword)));
     }
 
 
-    @ApiOperation(value = "登录", notes = "fsdf")
     @RequestMapping(value = "/login", method = RequestMethod.GET)
     @ResponseBody
-    public Object login(Integer id, String password) {
-        JSONObject jsonObject = new JSONObject();
-        User userForBase = userService.getUserById(id);
+    @ApiOperation(value = "登录")
+    public Object login(String id, String password, String verifyCode) {
+        User userForBase = userService.query(id);
         if (userForBase == null) {
-            jsonObject.put("message", "登录失败,用户不存在");
-            return jsonObject;
+            return Result.error(CodeMsg.OPERATION_FAILED.fillArgs("用户不存在"));
         } else {
-            if (!userForBase.getPassword().equals(password)) {
-                jsonObject.put("message", "登录失败,密码错误");
-                return jsonObject;
+            JWTVerifier verifier = JWT.require(Algorithm.HMAC256(Const.ENCRYPTED_MSG)).build();
+            String decodePassword = verifier.verify(userForBase.getPassword()).getClaims().get("password").asString();
+            if (!password.equals(decodePassword)) {
+                return Result.error(CodeMsg.OPERATION_FAILED.fillArgs("密码错误！"));
             } else {
-                String token = tokenService.getToken(userForBase);
-                jsonObject.put("token", token);
-                jsonObject.put("user", userForBase);
-                return jsonObject;
+
+                return //this.checkVerify(verifyCode);
+                        Result.success(tokenService.getToken(userForBase));
             }
         }
-
     }
 
-    @RequestMapping(value = "/getMessage", method = RequestMethod.GET)
+    @RequestMapping(value = "/delete", method = RequestMethod.GET)
     @ResponseBody
-    @UserLoginToken
-    public Object getMessage() {
-        return Result.success("您已通过验证");
+    @ApiOperation(value = "删除")
+    public Object delete(String id) {
+        return Result.success(userService.delete(id));
     }
+
 
     @RequestMapping(value = "/getAll", method = RequestMethod.GET)
     @ResponseBody
-    @UserLoginToken
-    public Object list(Page page) {
-
-        /*ModelAndView result = new ModelAndView("index");
-        List<User> countryList = userService.getAll(user);
-        result.addObject("pageInfo", new PageInfo<>(countryList));
-        result.addObject("queryParam", user);
-        result.addObject("page", user.getPage());
-        result.addObject("rows", user.getRows());
-        return Result.success(result);*/
-       /* List<User> countryList = userService.getAll(user);
-        Map<String, Object> map = new HashMap<>();
-        map.put("pageInfo", countryList);
-        map.put("queryParam", user);
-        map.put("page", user.getPage());
-        map.put("rows", user.getRows());
-        return Result.success(map);*/
+    @ApiOperation(value = "获取所有")
+    public Object getAll(Page page) {
         PageHelper.startPage(page.getPageNum(), page.getPageSize());
         List<User> list = userService.getAll();
-        PageInfo<User> pageInfo = new PageInfo<>(list);
-        return Result.success(pageInfo.getList());
+        return Result.success(new PageInfo<>(list).getList());
     }
 
-
-    private final static Logger logger = LoggerFactory.getLogger(UserController.class);
-
-    /**
-     * 生成验证码
-     */
     @RequestMapping(value = "/getVerify", method = RequestMethod.GET)
     @ApiOperation(value = "获取验证码")
     public void getVerify(HttpSession httpSession, HttpServletResponse response) throws IOException {
         RandomValidateCodeUtil randomValidateCode = new RandomValidateCodeUtil();
         RandomValidateCodeUtil.RandomObject randomObject = randomValidateCode.getRandomCode();
-        httpSession.setAttribute(RANDOM_CODE_ATTRIBUTE, randomObject.getCode());
+        httpSession.setAttribute(AUTH_CODE_ATTRIBUTE, randomObject.getCode());
         ImageIO.write(randomObject.getBufferedImage(), "jpeg", response.getOutputStream());
     }
 
 
-    /**
-     * 校验验证码
-     */
     @RequestMapping(value = "/checkVerify", method = RequestMethod.GET)
     @ResponseBody
     @ApiOperation(value = "验证验证码")
-    @UserLoginToken
-    public Object checkVerify(@RequestParam String verifyInput, HttpSession session) {
-        Object attr = session.getAttribute(RANDOM_CODE_ATTRIBUTE);
+    public Object checkVerify(String code) {
+        Object attr = httpSession.getAttribute(AUTH_CODE_ATTRIBUTE);
         if (attr != null) {
-            if (attr instanceof String && attr.equals(verifyInput)) {
-                return Result.success(true);
+            if (attr instanceof String && attr.equals(code)) {
+                return Result.success();
             }
         }
-        return Result.error(CodeMsg.OPERATION_FAILED.fillArgs(false));
+        return Result.error(CodeMsg.OPERATION_FAILED.fillArgs("验证码错误"));
 
     }
-
 
 }

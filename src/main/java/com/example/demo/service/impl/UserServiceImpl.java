@@ -15,17 +15,25 @@ public class UserServiceImpl implements UserService {
     private UserDao userDao;
 
 
-
     @Override
-    public User getUserById(int userId) {
-        return userDao.selectByPrimaryKey(userId);
+    public int insert(User user) {
+        return userDao.insert(user);
     }
 
     @Override
-    public void addUser(User record) {
-        userDao.insertSelective(record);
+    public int delete(String id) {
+        return userDao.delete(id);
     }
 
+    @Override
+    public int update(User user) {
+        return userDao.update(user);
+    }
+
+    @Override
+    public User query(String id) {
+        return userDao.query(id);
+    }
 
     @Override
     public List<User> getAll() {
