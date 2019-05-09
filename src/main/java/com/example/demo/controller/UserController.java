@@ -121,7 +121,7 @@ public class UserController {
 
     @RequestMapping(value = "/getVerify", method = RequestMethod.GET)
     @ApiOperation(value = "获取验证码")
-    public void getVerify(HttpSession httpSession, HttpServletResponse response) throws IOException {
+    public void getVerify(HttpServletResponse response) throws IOException {
         RandomValidateCodeUtil randomValidateCode = new RandomValidateCodeUtil();
         RandomValidateCodeUtil.RandomObject randomObject = randomValidateCode.getRandomCode();
         httpSession.setAttribute(AUTH_CODE_ATTRIBUTE, randomObject.getCode());
