@@ -17,12 +17,13 @@ public class CodeMsg {
         this.msg = msg;
     }
     /*服务端异常*/
-    public static CodeMsg SUCCESS = new CodeMsg(200,"");
-    public static CodeMsg SERVER_ERROR = new CodeMsg(100,"系统异常：%s");
-    public static CodeMsg BIND_ERROR = new CodeMsg(101,"(绑定异常)参数校验异常：%s"); /*用占位符 传入一个参数*/
-    public static CodeMsg SESSION_ERROR = new CodeMsg(102,"没有SESSION！"); /*用占位符 传入一个参数*/
-    public static CodeMsg REQUEST_ERROR = new CodeMsg(103,"非法请求！"); /*用占位符 传入一个参数*/
-    public static CodeMsg REQUEST_OVER_LIMIT = new CodeMsg(104,"请求次数过多！"); /*用占位符 传入一个参数*/
+    public static CodeMsg SUCCESS = new CodeMsg(1000,"");
+    public static CodeMsg OPERATION_FAILD = new CodeMsg(1001,"操作失败：%s");
+    public static CodeMsg SERVER_ERROR = new CodeMsg(1002,"系统异常：%s");
+    /*public static CodeMsg BIND_ERROR = new CodeMsg(101,"(绑定异常)参数校验异常：%s"); *//*用占位符 传入一个参数*//*
+    public static CodeMsg SESSION_ERROR = new CodeMsg(102,"没有SESSION！"); *//*用占位符 传入一个参数*//*
+    public static CodeMsg REQUEST_ERROR = new CodeMsg(103,"非法请求！"); *//*用占位符 传入一个参数*//*
+    public static CodeMsg REQUEST_OVER_LIMIT = new CodeMsg(104,"请求次数过多！"); *//*用占位符 传入一个参数*/
 
     private CodeMsg( ) {
     }

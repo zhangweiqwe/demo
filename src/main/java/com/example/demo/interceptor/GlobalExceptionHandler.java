@@ -16,8 +16,6 @@ public class GlobalExceptionHandler {
     @ResponseBody
     @ExceptionHandler(Exception.class)
     public Object handleException(Exception e) {
-        CodeMsg codeMsg = CodeMsg.SERVER_ERROR;
-        codeMsg.setMsg(String.format(CodeMsg.SERVER_ERROR.getMsg(), e.getMessage()));
-        return Result.error(codeMsg);
+        return Result.error(CodeMsg.SERVER_ERROR.fillArgs(false,e.getMessage()));
     }
 }

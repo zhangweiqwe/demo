@@ -50,14 +50,14 @@
             <version>1.3.0</version>
         </dependency>
 
-
-
+        <!--aes加密-->
         <dependency>
             <groupId>org.bouncycastle</groupId>
             <artifactId>bcprov-jdk15on</artifactId>
             <version>1.56</version>
         </dependency>
-
+        <!--token-->
+        <!--        https://www.jianshu.com/p/e88d3f8151db-->
         <dependency>
             <groupId>com.auth0</groupId>
             <artifactId>java-jwt</artifactId>
@@ -72,6 +72,7 @@
         </dependency>-->
 
 
+        <!--        json-->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
@@ -79,10 +80,7 @@
         </dependency>
 
 
-
-
-
-
+        <!--        分页-->
         <dependency>
             <groupId>com.github.pagehelper</groupId>
             <artifactId>pagehelper-spring-boot-starter</artifactId>
@@ -103,6 +101,27 @@
 
 
     </dependencies>
+
+
+    <!--        优雅的打包相关-->
+    <!--        https://www.jianshu.com/p/7c8cf1619434-->
+
+    <!--    D:\Users\Administrator\IdeaProjects\demo2\target-->
+    <!--    demo-0.0.1-SNAPSHOT.jar-->
+    <profiles>
+        <profile>
+            <id>jdk18</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+                <jdk>1.8</jdk>
+            </activation>
+            <properties>
+                <maven.compiler.source>1.8</maven.compiler.source>
+                <maven.compiler.target>1.8</maven.compiler.target>
+                <maven.compiler.compilerVersion>1.8</maven.compiler.compilerVersion>
+            </properties>
+        </profile>
+    </profiles>
 
     <build>
         <plugins>
