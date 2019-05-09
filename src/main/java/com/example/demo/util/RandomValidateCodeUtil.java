@@ -40,7 +40,6 @@ public class RandomValidateCodeUtil {
     private int lineSize = 40;// 干扰线数量
     private int stringNum = 4;// 随机产生字符数量
 
-    private static final Logger logger = LoggerFactory.getLogger(RandomValidateCodeUtil.class);
 
     private Random random = new Random();
 
@@ -84,7 +83,6 @@ public class RandomValidateCodeUtil {
         for (int i = 1; i <= stringNum; i++) {
             randomString = drawString(g, randomString, i);
         }
-        logger.info(randomString);
         //将生成的随机字符串保存到session中
         g.dispose();
 

@@ -1932,3 +1932,678 @@ org.springframework.web.HttpMediaTypeNotAcceptableException: Could not find acce
 2019-05-09 10:20:55.583  INFO 1056 --- [http-nio-8081-exec-7] c.e.demo.util.RandomValidateCodeUtil     : 3161
 2019-05-09 10:20:56.382  INFO 1056 --- [http-nio-8081-exec-8] c.e.demo.util.RandomValidateCodeUtil     : 5602
 2019-05-09 10:20:58.680  INFO 1056 --- [http-nio-8081-exec-9] c.e.demo.util.RandomValidateCodeUtil     : 1117
+2019-05-09 10:27:25.379  INFO 13588 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication on SC-201803061509 with PID 13588 (D:\Users\Administrator\IdeaProjects\demo2\target\classes started by Administrator in D:\Users\Administrator\IdeaProjects\demo2)
+2019-05-09 10:27:25.381  INFO 13588 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2019-05-09 10:27:26.197  INFO 13588 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bd7674df] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-09 10:27:26.423  INFO 13588 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-05-09 10:27:26.439  INFO 13588 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-05-09 10:27:26.439  INFO 13588 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-05-09 10:27:26.455  INFO 13588 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_162\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_162\jre\bin;C:\Program Files\Java\jdk1.8.0_162\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Lib\site-packages\Django-2.0.3-py3.6.egg;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Scripts;C:\Go\bin;C:\Program Files\MySQL\MySQL Server 5.7\bin;C:\Program Files\TortoiseSVN\bin;C:\Users\Administrator\Desktop\pubg\apache-maven-3.5.3\bin;C:\WINDOWS\System32\OpenSSH\;C:\Users\Administrator\AppData\Local\Android\Sdk\platform-tools;C:\Users\Administrator\AppData\Local\Android\Sdk\tools;C:\Users\Administrator\AppData\Local\Android\Sdk\ndk-bundle;%MAVEN_HOME%\bin\;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;D:\mysql-8.0.11-winx64\bin;;.]
+2019-05-09 10:27:26.535  INFO 13588 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-05-09 10:27:26.535  INFO 13588 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1127 ms
+2019-05-09 10:27:27.057  INFO 13588 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-05-09 10:27:27.189  INFO 13588 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-09 10:27:27.309  INFO 13588 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-05-09 10:27:27.324  INFO 13588 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-05-09 10:27:27.356  INFO 13588 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-05-09 10:27:27.504  INFO 13588 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-05-09 10:27:27.506  INFO 13588 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 2.373 seconds (JVM running for 4.009)
+2019-05-09 10:27:28.343  INFO 13588 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-05-09 10:27:28.344  INFO 13588 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-05-09 10:27:28.350  INFO 13588 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2019-05-09 10:28:13.760  INFO 14288 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication on SC-201803061509 with PID 14288 (D:\Users\Administrator\IdeaProjects\demo2\target\classes started by Administrator in D:\Users\Administrator\IdeaProjects\demo2)
+2019-05-09 10:28:13.760  INFO 14288 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2019-05-09 10:28:14.776  INFO 14288 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$296415c3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-09 10:28:14.999  INFO 14288 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-05-09 10:28:15.020  INFO 14288 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-05-09 10:28:15.020  INFO 14288 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-05-09 10:28:15.027  INFO 14288 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_162\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_162\jre\bin;C:\Program Files\Java\jdk1.8.0_162\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Lib\site-packages\Django-2.0.3-py3.6.egg;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Scripts;C:\Go\bin;C:\Program Files\MySQL\MySQL Server 5.7\bin;C:\Program Files\TortoiseSVN\bin;C:\Users\Administrator\Desktop\pubg\apache-maven-3.5.3\bin;C:\WINDOWS\System32\OpenSSH\;C:\Users\Administrator\AppData\Local\Android\Sdk\platform-tools;C:\Users\Administrator\AppData\Local\Android\Sdk\tools;C:\Users\Administrator\AppData\Local\Android\Sdk\ndk-bundle;%MAVEN_HOME%\bin\;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;D:\mysql-8.0.11-winx64\bin;;.]
+2019-05-09 10:28:15.125  INFO 14288 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-05-09 10:28:15.125  INFO 14288 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1318 ms
+2019-05-09 10:28:15.541  INFO 14288 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-05-09 10:28:15.666  INFO 14288 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-09 10:28:15.819  INFO 14288 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-05-09 10:28:15.835  INFO 14288 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-05-09 10:28:15.851  INFO 14288 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-05-09 10:28:15.991  INFO 14288 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-05-09 10:28:16.009  INFO 14288 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 2.498 seconds (JVM running for 3.0)
+2019-05-09 10:28:19.396  INFO 14288 --- [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-05-09 10:28:19.396  INFO 14288 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-05-09 10:28:19.403  INFO 14288 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2019-05-09 10:30:25.667  INFO 13988 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication on SC-201803061509 with PID 13988 (D:\Users\Administrator\IdeaProjects\demo2\target\classes started by Administrator in D:\Users\Administrator\IdeaProjects\demo2)
+2019-05-09 10:30:25.667  INFO 13988 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2019-05-09 10:30:26.694  INFO 13988 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4035af7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-09 10:30:26.901  INFO 13988 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-05-09 10:30:26.917  INFO 13988 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-05-09 10:30:26.917  INFO 13988 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-05-09 10:30:26.917  INFO 13988 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_162\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_162\jre\bin;C:\Program Files\Java\jdk1.8.0_162\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Lib\site-packages\Django-2.0.3-py3.6.egg;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Scripts;C:\Go\bin;C:\Program Files\MySQL\MySQL Server 5.7\bin;C:\Program Files\TortoiseSVN\bin;C:\Users\Administrator\Desktop\pubg\apache-maven-3.5.3\bin;C:\WINDOWS\System32\OpenSSH\;C:\Users\Administrator\AppData\Local\Android\Sdk\platform-tools;C:\Users\Administrator\AppData\Local\Android\Sdk\tools;C:\Users\Administrator\AppData\Local\Android\Sdk\ndk-bundle;%MAVEN_HOME%\bin\;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;D:\mysql-8.0.11-winx64\bin;;.]
+2019-05-09 10:30:26.995  INFO 13988 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-05-09 10:30:26.995  INFO 13988 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1277 ms
+2019-05-09 10:30:27.433  INFO 13988 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-05-09 10:30:27.542  INFO 13988 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-09 10:30:27.667  INFO 13988 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-05-09 10:30:27.683  INFO 13988 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-05-09 10:30:27.698  INFO 13988 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-05-09 10:30:27.854  INFO 13988 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-05-09 10:30:27.854  INFO 13988 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 2.453 seconds (JVM running for 2.944)
+2019-05-09 10:30:33.804  INFO 13988 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-05-09 10:30:33.805  INFO 13988 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-05-09 10:30:33.811  INFO 13988 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2019-05-09 10:30:52.637  INFO 6796 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication on SC-201803061509 with PID 6796 (D:\Users\Administrator\IdeaProjects\demo2\target\classes started by Administrator in D:\Users\Administrator\IdeaProjects\demo2)
+2019-05-09 10:30:52.637  INFO 6796 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2019-05-09 10:30:53.621  INFO 6796 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c7ac4cc5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-09 10:30:53.840  INFO 6796 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-05-09 10:30:53.856  INFO 6796 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-05-09 10:30:53.856  INFO 6796 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-05-09 10:30:53.856  INFO 6796 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_162\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_162\jre\bin;C:\Program Files\Java\jdk1.8.0_162\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Lib\site-packages\Django-2.0.3-py3.6.egg;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Scripts;C:\Go\bin;C:\Program Files\MySQL\MySQL Server 5.7\bin;C:\Program Files\TortoiseSVN\bin;C:\Users\Administrator\Desktop\pubg\apache-maven-3.5.3\bin;C:\WINDOWS\System32\OpenSSH\;C:\Users\Administrator\AppData\Local\Android\Sdk\platform-tools;C:\Users\Administrator\AppData\Local\Android\Sdk\tools;C:\Users\Administrator\AppData\Local\Android\Sdk\ndk-bundle;%MAVEN_HOME%\bin\;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;D:\mysql-8.0.11-winx64\bin;;.]
+2019-05-09 10:30:54.153  INFO 6796 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-05-09 10:30:54.153  INFO 6796 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1484 ms
+2019-05-09 10:30:54.604  INFO 6796 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-05-09 10:30:54.715  INFO 6796 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-09 10:30:54.828  INFO 6796 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-05-09 10:30:54.844  INFO 6796 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-05-09 10:30:54.859  INFO 6796 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-05-09 10:30:55.002  INFO 6796 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-05-09 10:30:55.002  INFO 6796 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 2.661 seconds (JVM running for 3.211)
+2019-05-09 10:31:06.923  INFO 6796 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-05-09 10:31:06.923  INFO 6796 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-05-09 10:31:06.930  INFO 6796 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2019-05-09 10:33:06.135  INFO 8940 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication on SC-201803061509 with PID 8940 (D:\Users\Administrator\IdeaProjects\demo2\target\classes started by Administrator in D:\Users\Administrator\IdeaProjects\demo2)
+2019-05-09 10:33:06.135  INFO 8940 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2019-05-09 10:33:07.180  INFO 8940 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$edbf20a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-09 10:33:07.394  INFO 8940 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-05-09 10:33:07.410  INFO 8940 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-05-09 10:33:07.410  INFO 8940 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-05-09 10:33:07.426  INFO 8940 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_162\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_162\jre\bin;C:\Program Files\Java\jdk1.8.0_162\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Lib\site-packages\Django-2.0.3-py3.6.egg;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Scripts;C:\Go\bin;C:\Program Files\MySQL\MySQL Server 5.7\bin;C:\Program Files\TortoiseSVN\bin;C:\Users\Administrator\Desktop\pubg\apache-maven-3.5.3\bin;C:\WINDOWS\System32\OpenSSH\;C:\Users\Administrator\AppData\Local\Android\Sdk\platform-tools;C:\Users\Administrator\AppData\Local\Android\Sdk\tools;C:\Users\Administrator\AppData\Local\Android\Sdk\ndk-bundle;%MAVEN_HOME%\bin\;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;D:\mysql-8.0.11-winx64\bin;;.]
+2019-05-09 10:33:07.488  INFO 8940 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-05-09 10:33:07.488  INFO 8940 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1322 ms
+2019-05-09 10:33:07.949  INFO 8940 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-05-09 10:33:08.059  INFO 8940 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-09 10:33:08.194  INFO 8940 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-05-09 10:33:08.198  INFO 8940 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-05-09 10:33:08.214  INFO 8940 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-05-09 10:33:08.378  INFO 8940 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-05-09 10:33:08.380  INFO 8940 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 2.526 seconds (JVM running for 3.031)
+2019-05-09 10:33:10.739  INFO 8940 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-05-09 10:33:10.739  INFO 8940 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-05-09 10:33:10.745  INFO 8940 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2019-05-09 10:33:10.762  INFO 8940 --- [http-nio-8081-exec-1] c.e.d.i.GlobalExceptionHandler           : 无token，请重新登录
+2019-05-09 10:33:25.129  INFO 8940 --- [http-nio-8081-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-05-09 10:33:25.805  INFO 8940 --- [http-nio-8081-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-05-09 10:33:36.287  INFO 8940 --- [http-nio-8081-exec-5] c.e.d.i.GlobalExceptionHandler           : 无token，请重新登录
+2019-05-09 10:33:42.581  INFO 8940 --- [http-nio-8081-exec-6] c.e.d.i.GlobalExceptionHandler           : 无token，请重新登录
+2019-05-09 10:35:19.698  INFO 7760 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication on SC-201803061509 with PID 7760 (D:\Users\Administrator\IdeaProjects\demo2\target\classes started by Administrator in D:\Users\Administrator\IdeaProjects\demo2)
+2019-05-09 10:35:19.698  INFO 7760 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2019-05-09 10:35:20.698  INFO 7760 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$40386111] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-09 10:35:20.916  INFO 7760 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-05-09 10:35:20.932  INFO 7760 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-05-09 10:35:20.932  INFO 7760 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-05-09 10:35:20.948  INFO 7760 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_162\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_162\jre\bin;C:\Program Files\Java\jdk1.8.0_162\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Lib\site-packages\Django-2.0.3-py3.6.egg;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Scripts;C:\Go\bin;C:\Program Files\MySQL\MySQL Server 5.7\bin;C:\Program Files\TortoiseSVN\bin;C:\Users\Administrator\Desktop\pubg\apache-maven-3.5.3\bin;C:\WINDOWS\System32\OpenSSH\;C:\Users\Administrator\AppData\Local\Android\Sdk\platform-tools;C:\Users\Administrator\AppData\Local\Android\Sdk\tools;C:\Users\Administrator\AppData\Local\Android\Sdk\ndk-bundle;%MAVEN_HOME%\bin\;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;D:\mysql-8.0.11-winx64\bin;;.]
+2019-05-09 10:35:21.023  INFO 7760 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-05-09 10:35:21.023  INFO 7760 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1278 ms
+2019-05-09 10:35:21.450  INFO 7760 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-05-09 10:35:21.570  INFO 7760 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-09 10:35:21.691  INFO 7760 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-05-09 10:35:21.698  INFO 7760 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-05-09 10:35:21.714  INFO 7760 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-05-09 10:35:21.855  INFO 7760 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-05-09 10:35:21.855  INFO 7760 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 2.407 seconds (JVM running for 2.898)
+2019-05-09 10:35:26.157  INFO 7760 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-05-09 10:35:26.157  INFO 7760 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-05-09 10:35:26.164  INFO 7760 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2019-05-09 10:35:26.176  INFO 7760 --- [http-nio-8081-exec-1] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:35:31.280  INFO 7760 --- [http-nio-8081-exec-2] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:35:31.282  INFO 7760 --- [http-nio-8081-exec-2] c.e.d.i.GlobalExceptionHandler           : 无token，请重新登录
+2019-05-09 10:35:37.227  INFO 7760 --- [http-nio-8081-exec-4] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:35:37.228  INFO 7760 --- [http-nio-8081-exec-4] c.e.d.i.GlobalExceptionHandler           : 无token，请重新登录
+2019-05-09 10:35:53.393  INFO 7760 --- [http-nio-8081-exec-3] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:35:53.393  INFO 7760 --- [http-nio-8081-exec-3] c.e.d.i.GlobalExceptionHandler           : 无token，请重新登录
+2019-05-09 10:35:59.920  INFO 7760 --- [http-nio-8081-exec-5] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:35:59.921  INFO 7760 --- [http-nio-8081-exec-5] c.e.d.i.GlobalExceptionHandler           : 无token，请重新登录
+2019-05-09 10:36:01.119  INFO 7760 --- [http-nio-8081-exec-6] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:36:01.119  INFO 7760 --- [http-nio-8081-exec-6] c.e.d.i.GlobalExceptionHandler           : 无token，请重新登录
+2019-05-09 10:36:22.187  INFO 7760 --- [http-nio-8081-exec-7] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:36:22.188  INFO 7760 --- [http-nio-8081-exec-7] c.e.d.i.GlobalExceptionHandler           : 无token，请重新登录
+2019-05-09 10:36:22.849  INFO 7760 --- [http-nio-8081-exec-8] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:36:22.850  INFO 7760 --- [http-nio-8081-exec-8] c.e.d.i.GlobalExceptionHandler           : 无token，请重新登录
+2019-05-09 10:36:23.796  INFO 7760 --- [http-nio-8081-exec-9] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:36:23.796  INFO 7760 --- [http-nio-8081-exec-9] c.e.d.i.GlobalExceptionHandler           : 无token，请重新登录
+2019-05-09 10:36:24.956  INFO 7760 --- [http-nio-8081-exec-10] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:36:24.957  INFO 7760 --- [http-nio-8081-exec-10] c.e.d.i.GlobalExceptionHandler           : 无token，请重新登录
+2019-05-09 10:36:25.716  INFO 7760 --- [http-nio-8081-exec-1] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:36:25.717  INFO 7760 --- [http-nio-8081-exec-1] c.e.d.i.GlobalExceptionHandler           : 无token，请重新登录
+2019-05-09 10:37:06.750  INFO 7760 --- [http-nio-8081-exec-2] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:37:06.751  INFO 7760 --- [http-nio-8081-exec-2] c.e.d.i.GlobalExceptionHandler           : 无token，请重新登录
+2019-05-09 10:37:14.209  INFO 7760 --- [http-nio-8081-exec-4] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:37:14.210  INFO 7760 --- [http-nio-8081-exec-4] c.e.d.i.GlobalExceptionHandler           : 无token，请重新登录
+2019-05-09 10:37:14.914  INFO 7760 --- [http-nio-8081-exec-3] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:37:14.914  INFO 7760 --- [http-nio-8081-exec-3] c.e.d.i.GlobalExceptionHandler           : 无token，请重新登录
+2019-05-09 10:37:15.960  INFO 7760 --- [http-nio-8081-exec-5] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:37:15.960  INFO 7760 --- [http-nio-8081-exec-5] c.e.d.i.GlobalExceptionHandler           : 无token，请重新登录
+2019-05-09 10:37:16.724  INFO 7760 --- [http-nio-8081-exec-6] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:37:16.724  INFO 7760 --- [http-nio-8081-exec-6] c.e.d.i.GlobalExceptionHandler           : 无token，请重新登录
+2019-05-09 10:37:17.452  INFO 7760 --- [http-nio-8081-exec-7] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:37:17.452  INFO 7760 --- [http-nio-8081-exec-7] c.e.d.i.GlobalExceptionHandler           : 无token，请重新登录
+2019-05-09 10:37:29.620  INFO 7760 --- [http-nio-8081-exec-8] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:37:29.620  INFO 7760 --- [http-nio-8081-exec-8] c.e.d.i.GlobalExceptionHandler           : 无token，请重新登录
+2019-05-09 10:37:34.235  INFO 7760 --- [http-nio-8081-exec-9] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:37:34.235  INFO 7760 --- [http-nio-8081-exec-9] c.e.d.i.GlobalExceptionHandler           : 无token，请重新登录
+2019-05-09 10:37:36.251  INFO 7760 --- [http-nio-8081-exec-10] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:37:36.251  INFO 7760 --- [http-nio-8081-exec-10] c.e.d.i.GlobalExceptionHandler           : 无token，请重新登录
+2019-05-09 10:38:02.651  INFO 10048 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication on SC-201803061509 with PID 10048 (D:\Users\Administrator\IdeaProjects\demo2\target\classes started by Administrator in D:\Users\Administrator\IdeaProjects\demo2)
+2019-05-09 10:38:02.651  INFO 10048 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2019-05-09 10:38:03.571  INFO 10048 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$70cc5e82] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-09 10:38:03.917  INFO 10048 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-05-09 10:38:03.948  INFO 10048 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-05-09 10:38:03.948  INFO 10048 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-05-09 10:38:03.964  INFO 10048 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_162\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_162\jre\bin;C:\Program Files\Java\jdk1.8.0_162\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Lib\site-packages\Django-2.0.3-py3.6.egg;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Scripts;C:\Go\bin;C:\Program Files\MySQL\MySQL Server 5.7\bin;C:\Program Files\TortoiseSVN\bin;C:\Users\Administrator\Desktop\pubg\apache-maven-3.5.3\bin;C:\WINDOWS\System32\OpenSSH\;C:\Users\Administrator\AppData\Local\Android\Sdk\platform-tools;C:\Users\Administrator\AppData\Local\Android\Sdk\tools;C:\Users\Administrator\AppData\Local\Android\Sdk\ndk-bundle;%MAVEN_HOME%\bin\;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;D:\mysql-8.0.11-winx64\bin;;.]
+2019-05-09 10:38:04.077  INFO 10048 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-05-09 10:38:04.077  INFO 10048 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1395 ms
+2019-05-09 10:38:04.570  INFO 10048 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-05-09 10:38:04.682  INFO 10048 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-09 10:38:04.793  INFO 10048 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-05-09 10:38:04.808  INFO 10048 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-05-09 10:38:04.824  INFO 10048 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-05-09 10:38:04.964  INFO 10048 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-05-09 10:38:04.964  INFO 10048 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 2.578 seconds (JVM running for 3.065)
+2019-05-09 10:38:08.307  INFO 10048 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-05-09 10:38:08.307  INFO 10048 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-05-09 10:38:08.307  INFO 10048 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2019-05-09 10:38:08.323  INFO 10048 --- [http-nio-8081-exec-1] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:38:08.330  INFO 10048 --- [http-nio-8081-exec-1] c.e.d.i.GlobalExceptionHandler           : 无token，请重新登录.=
+2019-05-09 10:38:14.590  INFO 10048 --- [http-nio-8081-exec-3] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:38:14.590  INFO 10048 --- [http-nio-8081-exec-3] c.e.d.i.GlobalExceptionHandler           : 无token，请重新登录.=
+2019-05-09 10:38:15.305  INFO 10048 --- [http-nio-8081-exec-2] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:38:15.305  INFO 10048 --- [http-nio-8081-exec-2] c.e.d.i.GlobalExceptionHandler           : 无token，请重新登录.=
+2019-05-09 10:38:23.384  INFO 10048 --- [http-nio-8081-exec-4] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:38:23.384  INFO 10048 --- [http-nio-8081-exec-4] c.e.d.i.GlobalExceptionHandler           : 无token，请重新登录.=
+2019-05-09 10:38:26.380  INFO 10048 --- [http-nio-8081-exec-5] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:38:35.173  INFO 10048 --- [http-nio-8081-exec-6] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:38:35.173  INFO 10048 --- [http-nio-8081-exec-6] c.e.d.i.GlobalExceptionHandler           : 无token，请重新登录.=
+2019-05-09 10:40:06.964  INFO 9932 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication on SC-201803061509 with PID 9932 (D:\Users\Administrator\IdeaProjects\demo2\target\classes started by Administrator in D:\Users\Administrator\IdeaProjects\demo2)
+2019-05-09 10:40:06.964  INFO 9932 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2019-05-09 10:40:07.964  INFO 9932 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fd115121] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-09 10:40:08.181  INFO 9932 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-05-09 10:40:08.196  INFO 9932 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-05-09 10:40:08.198  INFO 9932 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-05-09 10:40:08.198  INFO 9932 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_162\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_162\jre\bin;C:\Program Files\Java\jdk1.8.0_162\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Lib\site-packages\Django-2.0.3-py3.6.egg;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Scripts;C:\Go\bin;C:\Program Files\MySQL\MySQL Server 5.7\bin;C:\Program Files\TortoiseSVN\bin;C:\Users\Administrator\Desktop\pubg\apache-maven-3.5.3\bin;C:\WINDOWS\System32\OpenSSH\;C:\Users\Administrator\AppData\Local\Android\Sdk\platform-tools;C:\Users\Administrator\AppData\Local\Android\Sdk\tools;C:\Users\Administrator\AppData\Local\Android\Sdk\ndk-bundle;%MAVEN_HOME%\bin\;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;D:\mysql-8.0.11-winx64\bin;;.]
+2019-05-09 10:40:08.277  INFO 9932 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-05-09 10:40:08.277  INFO 9932 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1282 ms
+2019-05-09 10:40:08.777  INFO 9932 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-05-09 10:40:08.886  INFO 9932 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-09 10:40:09.018  INFO 9932 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-05-09 10:40:09.024  INFO 9932 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-05-09 10:40:09.040  INFO 9932 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-05-09 10:40:09.199  INFO 9932 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-05-09 10:40:09.199  INFO 9932 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 2.501 seconds (JVM running for 2.98)
+2019-05-09 10:40:19.712  INFO 13260 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication on SC-201803061509 with PID 13260 (D:\Users\Administrator\IdeaProjects\demo2\target\classes started by Administrator in D:\Users\Administrator\IdeaProjects\demo2)
+2019-05-09 10:40:19.712  INFO 13260 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2019-05-09 10:40:20.747  INFO 13260 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$49abe741] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-09 10:40:20.950  INFO 13260 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-05-09 10:40:20.965  INFO 13260 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-05-09 10:40:20.965  INFO 13260 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-05-09 10:40:20.981  INFO 13260 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_162\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_162\jre\bin;C:\Program Files\Java\jdk1.8.0_162\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Lib\site-packages\Django-2.0.3-py3.6.egg;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Scripts;C:\Go\bin;C:\Program Files\MySQL\MySQL Server 5.7\bin;C:\Program Files\TortoiseSVN\bin;C:\Users\Administrator\Desktop\pubg\apache-maven-3.5.3\bin;C:\WINDOWS\System32\OpenSSH\;C:\Users\Administrator\AppData\Local\Android\Sdk\platform-tools;C:\Users\Administrator\AppData\Local\Android\Sdk\tools;C:\Users\Administrator\AppData\Local\Android\Sdk\ndk-bundle;%MAVEN_HOME%\bin\;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;D:\mysql-8.0.11-winx64\bin;;.]
+2019-05-09 10:40:21.054  INFO 13260 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-05-09 10:40:21.054  INFO 13260 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1311 ms
+2019-05-09 10:40:21.510  INFO 13260 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-05-09 10:40:21.618  INFO 13260 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-09 10:40:21.746  INFO 13260 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-05-09 10:40:21.746  INFO 13260 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-05-09 10:40:21.777  INFO 13260 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-05-09 10:40:21.938  INFO 13260 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-05-09 10:40:21.938  INFO 13260 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 2.489 seconds (JVM running for 3.006)
+2019-05-09 10:40:22.799  INFO 13260 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-05-09 10:40:22.800  INFO 13260 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-05-09 10:40:22.806  INFO 13260 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2019-05-09 10:40:22.808  INFO 13260 --- [http-nio-8081-exec-1] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:40:22.808  INFO 13260 --- [http-nio-8081-exec-1] c.e.d.i.GlobalExceptionHandler           : 无token，请重新登录.=
+2019-05-09 10:40:25.412  INFO 13260 --- [http-nio-8081-exec-3] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:41:17.189  INFO 13260 --- [http-nio-8081-exec-2] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:41:23.705  INFO 13260 --- [http-nio-8081-exec-4] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:41:23.705  INFO 13260 --- [http-nio-8081-exec-4] c.e.d.i.GlobalExceptionHandler           : 无token，请重新登录.=
+2019-05-09 10:42:13.011  INFO 6264 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication on SC-201803061509 with PID 6264 (D:\Users\Administrator\IdeaProjects\demo2\target\classes started by Administrator in D:\Users\Administrator\IdeaProjects\demo2)
+2019-05-09 10:42:13.015  INFO 6264 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2019-05-09 10:42:13.983  INFO 6264 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8b327c1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-09 10:42:14.199  INFO 6264 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-05-09 10:42:14.214  INFO 6264 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-05-09 10:42:14.214  INFO 6264 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-05-09 10:42:14.214  INFO 6264 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_162\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_162\jre\bin;C:\Program Files\Java\jdk1.8.0_162\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Lib\site-packages\Django-2.0.3-py3.6.egg;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Scripts;C:\Go\bin;C:\Program Files\MySQL\MySQL Server 5.7\bin;C:\Program Files\TortoiseSVN\bin;C:\Users\Administrator\Desktop\pubg\apache-maven-3.5.3\bin;C:\WINDOWS\System32\OpenSSH\;C:\Users\Administrator\AppData\Local\Android\Sdk\platform-tools;C:\Users\Administrator\AppData\Local\Android\Sdk\tools;C:\Users\Administrator\AppData\Local\Android\Sdk\ndk-bundle;%MAVEN_HOME%\bin\;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;D:\mysql-8.0.11-winx64\bin;;.]
+2019-05-09 10:42:14.292  INFO 6264 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-05-09 10:42:14.292  INFO 6264 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1237 ms
+2019-05-09 10:42:14.745  INFO 6264 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-05-09 10:42:14.870  INFO 6264 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-09 10:42:14.997  INFO 6264 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-05-09 10:42:15.011  INFO 6264 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-05-09 10:42:15.023  INFO 6264 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-05-09 10:42:15.194  INFO 6264 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-05-09 10:42:15.196  INFO 6264 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 2.466 seconds (JVM running for 2.956)
+2019-05-09 10:42:17.231  INFO 6264 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-05-09 10:42:17.231  INFO 6264 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-05-09 10:42:17.237  INFO 6264 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2019-05-09 10:42:17.238  INFO 6264 --- [http-nio-8081-exec-1] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:42:17.238  INFO 6264 --- [http-nio-8081-exec-1] c.e.d.i.GlobalExceptionHandler           : 无token，请重新登录.=
+2019-05-09 10:42:31.225  INFO 6264 --- [http-nio-8081-exec-2] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:42:31.226  INFO 6264 --- [http-nio-8081-exec-2] c.e.d.i.GlobalExceptionHandler           : 无token，请重新登录.=
+2019-05-09 10:42:37.525  INFO 7224 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication on SC-201803061509 with PID 7224 (D:\Users\Administrator\IdeaProjects\demo2\target\classes started by Administrator in D:\Users\Administrator\IdeaProjects\demo2)
+2019-05-09 10:42:37.525  INFO 7224 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2019-05-09 10:42:38.477  INFO 7224 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$249cc8c4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-09 10:42:38.699  INFO 7224 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-05-09 10:42:38.715  INFO 7224 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-05-09 10:42:38.715  INFO 7224 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-05-09 10:42:38.731  INFO 7224 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_162\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_162\jre\bin;C:\Program Files\Java\jdk1.8.0_162\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Lib\site-packages\Django-2.0.3-py3.6.egg;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Scripts;C:\Go\bin;C:\Program Files\MySQL\MySQL Server 5.7\bin;C:\Program Files\TortoiseSVN\bin;C:\Users\Administrator\Desktop\pubg\apache-maven-3.5.3\bin;C:\WINDOWS\System32\OpenSSH\;C:\Users\Administrator\AppData\Local\Android\Sdk\platform-tools;C:\Users\Administrator\AppData\Local\Android\Sdk\tools;C:\Users\Administrator\AppData\Local\Android\Sdk\ndk-bundle;%MAVEN_HOME%\bin\;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;D:\mysql-8.0.11-winx64\bin;;.]
+2019-05-09 10:42:38.809  INFO 7224 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-05-09 10:42:38.809  INFO 7224 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1253 ms
+2019-05-09 10:42:39.246  INFO 7224 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-05-09 10:42:39.355  INFO 7224 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-09 10:42:39.480  INFO 7224 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-05-09 10:42:39.480  INFO 7224 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-05-09 10:42:39.516  INFO 7224 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-05-09 10:42:39.650  INFO 7224 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-05-09 10:42:39.650  INFO 7224 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 2.373 seconds (JVM running for 2.88)
+2019-05-09 10:42:41.878  INFO 7224 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-05-09 10:42:41.878  INFO 7224 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-05-09 10:42:41.878  INFO 7224 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2019-05-09 10:42:41.893  INFO 7224 --- [http-nio-8081-exec-1] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:42:41.893  INFO 7224 --- [http-nio-8081-exec-1] c.e.d.i.GlobalExceptionHandler           : 无token，请重新登录.=
+2019-05-09 10:42:41.893  WARN 7224 --- [http-nio-8081-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Failure in @ExceptionHandler public java.lang.Object com.example.demo.interceptor.GlobalExceptionHandler.handleException(java.lang.Exception)
+
+java.lang.NullPointerException: null
+	at java.util.regex.Matcher.getTextLength(Matcher.java:1283) ~[na:1.8.0_162]
+	at java.util.regex.Matcher.reset(Matcher.java:309) ~[na:1.8.0_162]
+	at java.util.regex.Matcher.<init>(Matcher.java:229) ~[na:1.8.0_162]
+	at java.util.regex.Pattern.matcher(Pattern.java:1093) ~[na:1.8.0_162]
+	at java.util.Formatter.parse(Formatter.java:2547) ~[na:1.8.0_162]
+	at java.util.Formatter.format(Formatter.java:2501) ~[na:1.8.0_162]
+	at java.util.Formatter.format(Formatter.java:2455) ~[na:1.8.0_162]
+	at java.lang.String.format(String.java:2940) ~[na:1.8.0_162]
+	at com.example.demo.entity.CodeMsg.fillArgs(CodeMsg.java:37) ~[classes/:na]
+	at com.example.demo.interceptor.GlobalExceptionHandler.handleException(GlobalExceptionHandler.java:23) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_162]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_162]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_162]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_162]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189) ~[spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.doResolveHandlerMethodException(ExceptionHandlerExceptionResolver.java:412) ~[spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodExceptionResolver.doResolveException(AbstractHandlerMethodExceptionResolver.java:61) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.resolveException(AbstractHandlerExceptionResolver.java:139) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.handler.HandlerExceptionResolverComposite.resolveException(HandlerExceptionResolverComposite.java:80) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processHandlerException(DispatcherServlet.java:1297) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1109) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1055) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-embed-websocket-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_162]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_162]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_162]
+
+2019-05-09 10:42:41.917 ERROR 7224 --- [http-nio-8081-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.RuntimeException: 无token，请重新登录] with root cause
+
+java.lang.RuntimeException: 无token，请重新登录
+	at com.example.demo.interceptor.AuthenticationInterceptor.preHandle(AuthenticationInterceptor.java:60) ~[classes/:na]
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:136) ~[spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1033) ~[spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942) ~[spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005) ~[spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897) ~[spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) ~[tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882) ~[spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92) ~[spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) ~[spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200) ~[tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_162]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_162]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_162]
+
+2019-05-09 10:42:41.925  INFO 7224 --- [http-nio-8081-exec-1] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:42:54.763  INFO 1948 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication on SC-201803061509 with PID 1948 (D:\Users\Administrator\IdeaProjects\demo2\target\classes started by Administrator in D:\Users\Administrator\IdeaProjects\demo2)
+2019-05-09 10:42:54.763  INFO 1948 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2019-05-09 10:42:55.808  INFO 1948 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fc70c475] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-09 10:42:56.012  INFO 1948 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-05-09 10:42:56.023  INFO 1948 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-05-09 10:42:56.023  INFO 1948 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-05-09 10:42:56.023  INFO 1948 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_162\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_162\jre\bin;C:\Program Files\Java\jdk1.8.0_162\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Lib\site-packages\Django-2.0.3-py3.6.egg;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Scripts;C:\Go\bin;C:\Program Files\MySQL\MySQL Server 5.7\bin;C:\Program Files\TortoiseSVN\bin;C:\Users\Administrator\Desktop\pubg\apache-maven-3.5.3\bin;C:\WINDOWS\System32\OpenSSH\;C:\Users\Administrator\AppData\Local\Android\Sdk\platform-tools;C:\Users\Administrator\AppData\Local\Android\Sdk\tools;C:\Users\Administrator\AppData\Local\Android\Sdk\ndk-bundle;%MAVEN_HOME%\bin\;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;D:\mysql-8.0.11-winx64\bin;;.]
+2019-05-09 10:42:56.101  INFO 1948 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-05-09 10:42:56.101  INFO 1948 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1306 ms
+2019-05-09 10:42:56.523  INFO 1948 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-05-09 10:42:56.633  INFO 1948 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-09 10:42:56.746  INFO 1948 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-05-09 10:42:56.761  INFO 1948 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-05-09 10:42:56.777  INFO 1948 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-05-09 10:42:56.933  INFO 1948 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-05-09 10:42:56.933  INFO 1948 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 2.421 seconds (JVM running for 2.912)
+2019-05-09 10:42:59.448  INFO 1948 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-05-09 10:42:59.448  INFO 1948 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-05-09 10:42:59.454  INFO 1948 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2019-05-09 10:42:59.454  INFO 1948 --- [http-nio-8081-exec-1] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:42:59.454  INFO 1948 --- [http-nio-8081-exec-1] c.e.d.i.GlobalExceptionHandler           : 无token，请重新登录.=
+2019-05-09 10:43:16.354  INFO 1948 --- [http-nio-8081-exec-2] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:43:16.354  INFO 1948 --- [http-nio-8081-exec-2] c.e.d.i.GlobalExceptionHandler           : 无token，请重新登录.=
+2019-05-09 10:44:13.442  INFO 8180 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication on SC-201803061509 with PID 8180 (D:\Users\Administrator\IdeaProjects\demo2\target\classes started by Administrator in D:\Users\Administrator\IdeaProjects\demo2)
+2019-05-09 10:44:13.442  INFO 8180 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2019-05-09 10:44:14.355  INFO 8180 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$58b69901] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-09 10:44:14.586  INFO 8180 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-05-09 10:44:14.601  INFO 8180 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-05-09 10:44:14.601  INFO 8180 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-05-09 10:44:14.601  INFO 8180 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_162\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_162\jre\bin;C:\Program Files\Java\jdk1.8.0_162\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Lib\site-packages\Django-2.0.3-py3.6.egg;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Scripts;C:\Go\bin;C:\Program Files\MySQL\MySQL Server 5.7\bin;C:\Program Files\TortoiseSVN\bin;C:\Users\Administrator\Desktop\pubg\apache-maven-3.5.3\bin;C:\WINDOWS\System32\OpenSSH\;C:\Users\Administrator\AppData\Local\Android\Sdk\platform-tools;C:\Users\Administrator\AppData\Local\Android\Sdk\tools;C:\Users\Administrator\AppData\Local\Android\Sdk\ndk-bundle;%MAVEN_HOME%\bin\;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;D:\mysql-8.0.11-winx64\bin;;.]
+2019-05-09 10:44:14.693  INFO 8180 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-05-09 10:44:14.693  INFO 8180 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1204 ms
+2019-05-09 10:44:15.117  INFO 8180 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-05-09 10:44:15.214  INFO 8180 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-09 10:44:15.339  INFO 8180 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-05-09 10:44:15.355  INFO 8180 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-05-09 10:44:15.370  INFO 8180 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-05-09 10:44:15.522  INFO 8180 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-05-09 10:44:15.524  INFO 8180 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 2.36 seconds (JVM running for 2.916)
+2019-05-09 10:44:17.841  INFO 8180 --- [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-05-09 10:44:17.841  INFO 8180 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-05-09 10:44:17.847  INFO 8180 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2019-05-09 10:44:17.858  INFO 8180 --- [http-nio-8081-exec-2] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:44:17.862  INFO 8180 --- [http-nio-8081-exec-2] c.e.d.i.GlobalExceptionHandler           : 无token，请重新登录<============
+2019-05-09 10:45:36.870  INFO 8180 --- [http-nio-8081-exec-3] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:45:36.870  INFO 8180 --- [http-nio-8081-exec-3] c.e.d.i.GlobalExceptionHandler           : 无token，请重新登录<============
+2019-05-09 10:45:42.570  INFO 8180 --- [http-nio-8081-exec-4] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:45:42.570  INFO 8180 --- [http-nio-8081-exec-4] c.e.d.i.GlobalExceptionHandler           : 无token，请重新登录<============
+2019-05-09 10:46:06.793  INFO 8736 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication on SC-201803061509 with PID 8736 (D:\Users\Administrator\IdeaProjects\demo2\target\classes started by Administrator in D:\Users\Administrator\IdeaProjects\demo2)
+2019-05-09 10:46:06.793  INFO 8736 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2019-05-09 10:46:07.692  INFO 8736 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f16794fc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-09 10:46:07.919  INFO 8736 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-05-09 10:46:07.935  INFO 8736 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-05-09 10:46:07.935  INFO 8736 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-05-09 10:46:07.935  INFO 8736 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_162\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_162\jre\bin;C:\Program Files\Java\jdk1.8.0_162\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Lib\site-packages\Django-2.0.3-py3.6.egg;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Scripts;C:\Go\bin;C:\Program Files\MySQL\MySQL Server 5.7\bin;C:\Program Files\TortoiseSVN\bin;C:\Users\Administrator\Desktop\pubg\apache-maven-3.5.3\bin;C:\WINDOWS\System32\OpenSSH\;C:\Users\Administrator\AppData\Local\Android\Sdk\platform-tools;C:\Users\Administrator\AppData\Local\Android\Sdk\tools;C:\Users\Administrator\AppData\Local\Android\Sdk\ndk-bundle;%MAVEN_HOME%\bin\;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;D:\mysql-8.0.11-winx64\bin;;.]
+2019-05-09 10:46:08.023  INFO 8736 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-05-09 10:46:08.023  INFO 8736 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1183 ms
+2019-05-09 10:46:08.480  INFO 8736 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-05-09 10:46:08.585  INFO 8736 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-09 10:46:08.714  INFO 8736 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-05-09 10:46:08.730  INFO 8736 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-05-09 10:46:08.745  INFO 8736 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-05-09 10:46:08.886  INFO 8736 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-05-09 10:46:08.886  INFO 8736 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 2.347 seconds (JVM running for 2.844)
+2019-05-09 10:46:11.602  INFO 8736 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-05-09 10:46:11.602  INFO 8736 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-05-09 10:46:11.608  INFO 8736 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2019-05-09 10:46:11.619  INFO 8736 --- [http-nio-8081-exec-1] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:46:16.224  INFO 8736 --- [http-nio-8081-exec-4] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:46:25.593  INFO 8736 --- [http-nio-8081-exec-6] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:46:52.402  INFO 6908 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication on SC-201803061509 with PID 6908 (D:\Users\Administrator\IdeaProjects\demo2\target\classes started by Administrator in D:\Users\Administrator\IdeaProjects\demo2)
+2019-05-09 10:46:52.402  INFO 6908 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2019-05-09 10:46:53.292  INFO 6908 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4444822] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-09 10:46:53.522  INFO 6908 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-05-09 10:46:53.539  INFO 6908 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-05-09 10:46:53.539  INFO 6908 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-05-09 10:46:53.539  INFO 6908 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_162\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_162\jre\bin;C:\Program Files\Java\jdk1.8.0_162\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Lib\site-packages\Django-2.0.3-py3.6.egg;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Scripts;C:\Go\bin;C:\Program Files\MySQL\MySQL Server 5.7\bin;C:\Program Files\TortoiseSVN\bin;C:\Users\Administrator\Desktop\pubg\apache-maven-3.5.3\bin;C:\WINDOWS\System32\OpenSSH\;C:\Users\Administrator\AppData\Local\Android\Sdk\platform-tools;C:\Users\Administrator\AppData\Local\Android\Sdk\tools;C:\Users\Administrator\AppData\Local\Android\Sdk\ndk-bundle;%MAVEN_HOME%\bin\;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;D:\mysql-8.0.11-winx64\bin;;.]
+2019-05-09 10:46:53.617  INFO 6908 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-05-09 10:46:53.617  INFO 6908 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1184 ms
+2019-05-09 10:46:54.070  INFO 6908 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-05-09 10:46:54.188  INFO 6908 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-09 10:46:54.294  INFO 6908 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-05-09 10:46:54.309  INFO 6908 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-05-09 10:46:54.325  INFO 6908 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-05-09 10:46:54.474  INFO 6908 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-05-09 10:46:54.474  INFO 6908 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 2.326 seconds (JVM running for 2.805)
+2019-05-09 10:46:57.148  INFO 6908 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-05-09 10:46:57.148  INFO 6908 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-05-09 10:46:57.155  INFO 6908 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2019-05-09 10:46:57.166  INFO 6908 --- [http-nio-8081-exec-1] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:46:57.169  INFO 6908 --- [http-nio-8081-exec-1] c.e.d.i.GlobalExceptionHandler           : 无token，请重新登录<============
+2019-05-09 10:46:58.297  INFO 6908 --- [http-nio-8081-exec-2] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:46:58.298  INFO 6908 --- [http-nio-8081-exec-2] c.e.d.i.GlobalExceptionHandler           : 无token，请重新登录<============
+2019-05-09 10:47:47.664  INFO 13836 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication on SC-201803061509 with PID 13836 (D:\Users\Administrator\IdeaProjects\demo2\target\classes started by Administrator in D:\Users\Administrator\IdeaProjects\demo2)
+2019-05-09 10:47:47.664  INFO 13836 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2019-05-09 10:47:48.555  INFO 13836 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$49abe741] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-09 10:47:48.778  INFO 13836 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-05-09 10:47:48.794  INFO 13836 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-05-09 10:47:48.794  INFO 13836 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-05-09 10:47:48.809  INFO 13836 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_162\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_162\jre\bin;C:\Program Files\Java\jdk1.8.0_162\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Lib\site-packages\Django-2.0.3-py3.6.egg;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Scripts;C:\Go\bin;C:\Program Files\MySQL\MySQL Server 5.7\bin;C:\Program Files\TortoiseSVN\bin;C:\Users\Administrator\Desktop\pubg\apache-maven-3.5.3\bin;C:\WINDOWS\System32\OpenSSH\;C:\Users\Administrator\AppData\Local\Android\Sdk\platform-tools;C:\Users\Administrator\AppData\Local\Android\Sdk\tools;C:\Users\Administrator\AppData\Local\Android\Sdk\ndk-bundle;%MAVEN_HOME%\bin\;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;D:\mysql-8.0.11-winx64\bin;;.]
+2019-05-09 10:47:48.887  INFO 13836 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-05-09 10:47:48.887  INFO 13836 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1187 ms
+2019-05-09 10:47:49.356  INFO 13836 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-05-09 10:47:49.481  INFO 13836 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-09 10:47:49.602  INFO 13836 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-05-09 10:47:49.617  INFO 13836 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-05-09 10:47:49.633  INFO 13836 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-05-09 10:47:49.777  INFO 13836 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-05-09 10:47:49.793  INFO 13836 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 2.376 seconds (JVM running for 2.946)
+2019-05-09 10:47:58.044  INFO 13156 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication on SC-201803061509 with PID 13156 (D:\Users\Administrator\IdeaProjects\demo2\target\classes started by Administrator in D:\Users\Administrator\IdeaProjects\demo2)
+2019-05-09 10:47:58.044  INFO 13156 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2019-05-09 10:47:58.980  INFO 13156 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e79cb768] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-09 10:47:59.199  INFO 13156 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-05-09 10:47:59.214  INFO 13156 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-05-09 10:47:59.214  INFO 13156 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-05-09 10:47:59.230  INFO 13156 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_162\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_162\jre\bin;C:\Program Files\Java\jdk1.8.0_162\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Lib\site-packages\Django-2.0.3-py3.6.egg;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Scripts;C:\Go\bin;C:\Program Files\MySQL\MySQL Server 5.7\bin;C:\Program Files\TortoiseSVN\bin;C:\Users\Administrator\Desktop\pubg\apache-maven-3.5.3\bin;C:\WINDOWS\System32\OpenSSH\;C:\Users\Administrator\AppData\Local\Android\Sdk\platform-tools;C:\Users\Administrator\AppData\Local\Android\Sdk\tools;C:\Users\Administrator\AppData\Local\Android\Sdk\ndk-bundle;%MAVEN_HOME%\bin\;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;D:\mysql-8.0.11-winx64\bin;;.]
+2019-05-09 10:47:59.293  INFO 13156 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-05-09 10:47:59.293  INFO 13156 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1202 ms
+2019-05-09 10:47:59.732  INFO 13156 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-05-09 10:47:59.857  INFO 13156 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-09 10:47:59.981  INFO 13156 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-05-09 10:47:59.997  INFO 13156 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-05-09 10:48:00.024  INFO 13156 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-05-09 10:48:00.185  INFO 13156 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-05-09 10:48:00.187  INFO 13156 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 2.395 seconds (JVM running for 2.876)
+2019-05-09 10:48:01.839  INFO 13156 --- [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-05-09 10:48:01.840  INFO 13156 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-05-09 10:48:01.846  INFO 13156 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2019-05-09 10:48:01.858  INFO 13156 --- [http-nio-8081-exec-2] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:48:01.862  INFO 13156 --- [http-nio-8081-exec-2] c.e.d.i.GlobalExceptionHandler           : 无token，请重新登录<============
+2019-05-09 10:48:07.248  INFO 13156 --- [http-nio-8081-exec-1] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:48:07.248  INFO 13156 --- [http-nio-8081-exec-1] c.e.d.i.GlobalExceptionHandler           : 无token，请重新登录<============
+2019-05-09 10:48:08.206  INFO 13156 --- [http-nio-8081-exec-3] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:48:08.206  INFO 13156 --- [http-nio-8081-exec-3] c.e.d.i.GlobalExceptionHandler           : 无token，请重新登录<============
+2019-05-09 10:48:08.801  INFO 13156 --- [http-nio-8081-exec-4] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:48:08.802  INFO 13156 --- [http-nio-8081-exec-4] c.e.d.i.GlobalExceptionHandler           : 无token，请重新登录<============
+2019-05-09 10:48:09.488  INFO 13156 --- [http-nio-8081-exec-5] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:48:09.489  INFO 13156 --- [http-nio-8081-exec-5] c.e.d.i.GlobalExceptionHandler           : 无token，请重新登录<============
+2019-05-09 10:48:10.045  INFO 13156 --- [http-nio-8081-exec-6] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:48:10.045  INFO 13156 --- [http-nio-8081-exec-6] c.e.d.i.GlobalExceptionHandler           : 无token，请重新登录<============
+2019-05-09 10:48:10.495  INFO 13156 --- [http-nio-8081-exec-7] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:48:10.496  INFO 13156 --- [http-nio-8081-exec-7] c.e.d.i.GlobalExceptionHandler           : 无token，请重新登录<============
+2019-05-09 10:48:11.022  INFO 13156 --- [http-nio-8081-exec-8] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:48:11.023  INFO 13156 --- [http-nio-8081-exec-8] c.e.d.i.GlobalExceptionHandler           : 无token，请重新登录<============
+2019-05-09 10:48:11.456  INFO 13156 --- [http-nio-8081-exec-9] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:48:11.456  INFO 13156 --- [http-nio-8081-exec-9] c.e.d.i.GlobalExceptionHandler           : 无token，请重新登录<============
+2019-05-09 10:48:11.944  INFO 13156 --- [http-nio-8081-exec-10] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:48:11.945  INFO 13156 --- [http-nio-8081-exec-10] c.e.d.i.GlobalExceptionHandler           : 无token，请重新登录<============
+2019-05-09 10:48:12.409  INFO 13156 --- [http-nio-8081-exec-2] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:48:12.409  INFO 13156 --- [http-nio-8081-exec-2] c.e.d.i.GlobalExceptionHandler           : 无token，请重新登录<============
+2019-05-09 10:48:13.331  INFO 13156 --- [http-nio-8081-exec-1] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:48:13.331  INFO 13156 --- [http-nio-8081-exec-1] c.e.d.i.GlobalExceptionHandler           : 无token，请重新登录<============
+2019-05-09 10:49:19.195  INFO 11744 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication on SC-201803061509 with PID 11744 (D:\Users\Administrator\IdeaProjects\demo2\target\classes started by Administrator in D:\Users\Administrator\IdeaProjects\demo2)
+2019-05-09 10:49:19.195  INFO 11744 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2019-05-09 10:49:20.433  INFO 11744 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5222a124] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-09 10:49:20.649  INFO 11744 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-05-09 10:49:20.664  INFO 11744 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-05-09 10:49:20.664  INFO 11744 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-05-09 10:49:20.680  INFO 11744 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_162\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_162\jre\bin;C:\Program Files\Java\jdk1.8.0_162\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Lib\site-packages\Django-2.0.3-py3.6.egg;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Scripts;C:\Go\bin;C:\Program Files\MySQL\MySQL Server 5.7\bin;C:\Program Files\TortoiseSVN\bin;C:\Users\Administrator\Desktop\pubg\apache-maven-3.5.3\bin;C:\WINDOWS\System32\OpenSSH\;C:\Users\Administrator\AppData\Local\Android\Sdk\platform-tools;C:\Users\Administrator\AppData\Local\Android\Sdk\tools;C:\Users\Administrator\AppData\Local\Android\Sdk\ndk-bundle;%MAVEN_HOME%\bin\;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;D:\mysql-8.0.11-winx64\bin;;.]
+2019-05-09 10:49:20.745  INFO 11744 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-05-09 10:49:20.745  INFO 11744 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1519 ms
+2019-05-09 10:49:21.216  INFO 11744 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-05-09 10:49:21.325  INFO 11744 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-09 10:49:21.450  INFO 11744 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-05-09 10:49:21.466  INFO 11744 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-05-09 10:49:21.481  INFO 11744 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-05-09 10:49:21.617  INFO 11744 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-05-09 10:49:21.633  INFO 11744 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 2.7 seconds (JVM running for 3.191)
+2019-05-09 10:49:32.527  INFO 7932 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication on SC-201803061509 with PID 7932 (D:\Users\Administrator\IdeaProjects\demo2\target\classes started by Administrator in D:\Users\Administrator\IdeaProjects\demo2)
+2019-05-09 10:49:32.527  INFO 7932 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2019-05-09 10:49:33.664  INFO 7932 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e056b3da] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-09 10:49:33.871  INFO 7932 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-05-09 10:49:33.887  INFO 7932 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-05-09 10:49:33.887  INFO 7932 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-05-09 10:49:33.887  INFO 7932 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_162\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_162\jre\bin;C:\Program Files\Java\jdk1.8.0_162\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Lib\site-packages\Django-2.0.3-py3.6.egg;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Scripts;C:\Go\bin;C:\Program Files\MySQL\MySQL Server 5.7\bin;C:\Program Files\TortoiseSVN\bin;C:\Users\Administrator\Desktop\pubg\apache-maven-3.5.3\bin;C:\WINDOWS\System32\OpenSSH\;C:\Users\Administrator\AppData\Local\Android\Sdk\platform-tools;C:\Users\Administrator\AppData\Local\Android\Sdk\tools;C:\Users\Administrator\AppData\Local\Android\Sdk\ndk-bundle;%MAVEN_HOME%\bin\;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;D:\mysql-8.0.11-winx64\bin;;.]
+2019-05-09 10:49:33.965  INFO 7932 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-05-09 10:49:33.965  INFO 7932 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1391 ms
+2019-05-09 10:49:34.402  INFO 7932 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-05-09 10:49:34.517  INFO 7932 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-09 10:49:34.633  INFO 7932 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-05-09 10:49:34.633  INFO 7932 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-05-09 10:49:34.648  INFO 7932 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-05-09 10:49:34.793  INFO 7932 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-05-09 10:49:34.793  INFO 7932 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 2.499 seconds (JVM running for 2.978)
+2019-05-09 10:49:39.188  INFO 7932 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-05-09 10:49:39.189  INFO 7932 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-05-09 10:49:39.194  INFO 7932 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2019-05-09 10:49:39.203  INFO 7932 --- [http-nio-8081-exec-1] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:49:47.134  INFO 7932 --- [http-nio-8081-exec-2] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:49:53.085  INFO 7932 --- [http-nio-8081-exec-4] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:49:53.111  INFO 7932 --- [http-nio-8081-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-05-09 10:49:53.384  INFO 7932 --- [http-nio-8081-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-05-09 10:49:53.830  INFO 7932 --- [http-nio-8081-exec-4] c.e.demo.controller.UserController       : cs
+2019-05-09 10:49:56.872  INFO 7932 --- [http-nio-8081-exec-5] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:50:26.488  INFO 7932 --- [http-nio-8081-exec-6] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:50:28.800  INFO 7932 --- [http-nio-8081-exec-7] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:50:29.376  INFO 7932 --- [http-nio-8081-exec-8] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:50:29.848  INFO 7932 --- [http-nio-8081-exec-9] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:50:30.234  INFO 7932 --- [http-nio-8081-exec-10] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:50:30.727  INFO 7932 --- [http-nio-8081-exec-1] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:50:31.310  INFO 7932 --- [http-nio-8081-exec-2] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:50:31.792  INFO 7932 --- [http-nio-8081-exec-3] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:50:32.388  INFO 7932 --- [http-nio-8081-exec-4] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:50:32.894  INFO 7932 --- [http-nio-8081-exec-5] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:50:33.473  INFO 7932 --- [http-nio-8081-exec-6] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:50:54.081  INFO 7932 --- [http-nio-8081-exec-7] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:50:54.742  INFO 7932 --- [http-nio-8081-exec-8] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:52:08.872  INFO 7932 --- [http-nio-8081-exec-1] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:52:13.751  INFO 7932 --- [http-nio-8081-exec-2] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:52:18.341  INFO 7932 --- [http-nio-8081-exec-3] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:55:42.151  INFO 14968 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication on SC-201803061509 with PID 14968 (D:\Users\Administrator\IdeaProjects\demo2\target\classes started by Administrator in D:\Users\Administrator\IdeaProjects\demo2)
+2019-05-09 10:55:42.151  INFO 14968 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2019-05-09 10:55:43.165  INFO 14968 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fd115121] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-09 10:55:43.411  INFO 14968 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-05-09 10:55:43.426  INFO 14968 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-05-09 10:55:43.426  INFO 14968 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-05-09 10:55:43.426  INFO 14968 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_162\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_162\jre\bin;C:\Program Files\Java\jdk1.8.0_162\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Lib\site-packages\Django-2.0.3-py3.6.egg;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Scripts;C:\Go\bin;C:\Program Files\MySQL\MySQL Server 5.7\bin;C:\Program Files\TortoiseSVN\bin;C:\Users\Administrator\Desktop\pubg\apache-maven-3.5.3\bin;C:\WINDOWS\System32\OpenSSH\;C:\Users\Administrator\AppData\Local\Android\Sdk\platform-tools;C:\Users\Administrator\AppData\Local\Android\Sdk\tools;C:\Users\Administrator\AppData\Local\Android\Sdk\ndk-bundle;%MAVEN_HOME%\bin\;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;D:\mysql-8.0.11-winx64\bin;;.]
+2019-05-09 10:55:43.514  INFO 14968 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-05-09 10:55:43.514  INFO 14968 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1310 ms
+2019-05-09 10:55:43.967  INFO 14968 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-05-09 10:55:44.088  INFO 14968 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-09 10:55:44.221  INFO 14968 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-05-09 10:55:44.234  INFO 14968 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-05-09 10:55:44.258  INFO 14968 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-05-09 10:55:44.413  INFO 14968 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-05-09 10:55:44.415  INFO 14968 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 2.537 seconds (JVM running for 3.044)
+2019-05-09 10:55:45.932  INFO 14968 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-05-09 10:55:45.932  INFO 14968 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-05-09 10:55:45.938  INFO 14968 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2019-05-09 10:55:45.948  INFO 14968 --- [http-nio-8081-exec-1] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:55:45.994  INFO 14968 --- [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-05-09 10:55:46.257  INFO 14968 --- [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-05-09 10:55:47.744  INFO 14968 --- [http-nio-8081-exec-2] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:55:50.102  INFO 14968 --- [http-nio-8081-exec-3] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:55:57.309  INFO 14968 --- [http-nio-8081-exec-4] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:57:42.393  INFO 992 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication on SC-201803061509 with PID 992 (D:\Users\Administrator\IdeaProjects\demo2\target\classes started by Administrator in D:\Users\Administrator\IdeaProjects\demo2)
+2019-05-09 10:57:42.393  INFO 992 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2019-05-09 10:57:43.362  INFO 992 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ff4fbdf4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-09 10:57:43.555  INFO 992 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-05-09 10:57:43.570  INFO 992 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-05-09 10:57:43.570  INFO 992 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-05-09 10:57:43.586  INFO 992 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_162\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_162\jre\bin;C:\Program Files\Java\jdk1.8.0_162\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Lib\site-packages\Django-2.0.3-py3.6.egg;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Scripts;C:\Go\bin;C:\Program Files\MySQL\MySQL Server 5.7\bin;C:\Program Files\TortoiseSVN\bin;C:\Users\Administrator\Desktop\pubg\apache-maven-3.5.3\bin;C:\WINDOWS\System32\OpenSSH\;C:\Users\Administrator\AppData\Local\Android\Sdk\platform-tools;C:\Users\Administrator\AppData\Local\Android\Sdk\tools;C:\Users\Administrator\AppData\Local\Android\Sdk\ndk-bundle;%MAVEN_HOME%\bin\;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;D:\mysql-8.0.11-winx64\bin;;.]
+2019-05-09 10:57:43.664  INFO 992 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-05-09 10:57:43.664  INFO 992 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1240 ms
+2019-05-09 10:57:44.185  INFO 992 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-05-09 10:57:44.294  INFO 992 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-05-09 10:57:44.306  INFO 992 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-05-09 10:57:44.313  INFO 992 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-05-09 10:57:44.458  INFO 992 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-05-09 10:57:44.458  INFO 992 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 2.323 seconds (JVM running for 3.002)
+2019-05-09 10:57:51.779  INFO 992 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-05-09 10:57:51.779  INFO 992 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-05-09 10:57:51.785  INFO 992 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2019-05-09 10:57:51.795  INFO 992 --- [http-nio-8081-exec-1] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:57:51.841  INFO 992 --- [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-05-09 10:57:52.103  INFO 992 --- [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-05-09 10:57:57.118  INFO 992 --- [http-nio-8081-exec-2] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:58:03.325  INFO 992 --- [http-nio-8081-exec-3] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:58:07.289  INFO 992 --- [http-nio-8081-exec-4] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:58:07.989  INFO 992 --- [http-nio-8081-exec-5] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:58:08.783  INFO 992 --- [http-nio-8081-exec-6] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:58:09.352  INFO 992 --- [http-nio-8081-exec-7] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:58:18.594  INFO 992 --- [http-nio-8081-exec-8] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:58:22.018  INFO 992 --- [http-nio-8081-exec-10] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:58:24.139  INFO 992 --- [http-nio-8081-exec-9] c.e.d.i.AuthenticationInterceptor        : true<
+2019-05-09 10:59:08.845  INFO 15068 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication on SC-201803061509 with PID 15068 (D:\Users\Administrator\IdeaProjects\demo2\target\classes started by Administrator in D:\Users\Administrator\IdeaProjects\demo2)
+2019-05-09 10:59:08.845  INFO 15068 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2019-05-09 10:59:09.925  INFO 15068 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c947a7c3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-09 10:59:10.149  INFO 15068 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-05-09 10:59:10.165  INFO 15068 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-05-09 10:59:10.165  INFO 15068 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-05-09 10:59:10.165  INFO 15068 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_162\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_162\jre\bin;C:\Program Files\Java\jdk1.8.0_162\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Lib\site-packages\Django-2.0.3-py3.6.egg;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Scripts;C:\Go\bin;C:\Program Files\MySQL\MySQL Server 5.7\bin;C:\Program Files\TortoiseSVN\bin;C:\Users\Administrator\Desktop\pubg\apache-maven-3.5.3\bin;C:\WINDOWS\System32\OpenSSH\;C:\Users\Administrator\AppData\Local\Android\Sdk\platform-tools;C:\Users\Administrator\AppData\Local\Android\Sdk\tools;C:\Users\Administrator\AppData\Local\Android\Sdk\ndk-bundle;%MAVEN_HOME%\bin\;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;D:\mysql-8.0.11-winx64\bin;;.]
+2019-05-09 10:59:10.241  INFO 15068 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-05-09 10:59:10.241  INFO 15068 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1349 ms
+2019-05-09 10:59:10.801  INFO 15068 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-05-09 10:59:10.923  INFO 15068 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-05-09 10:59:10.936  INFO 15068 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-05-09 10:59:10.958  INFO 15068 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-05-09 10:59:11.108  INFO 15068 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-05-09 10:59:11.111  INFO 15068 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 2.507 seconds (JVM running for 3.004)

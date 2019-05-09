@@ -173,6 +173,7 @@ public class UserController {
     @RequestMapping(value = "/checkVerify", method = RequestMethod.GET)
     @ResponseBody
     @ApiOperation(value = "验证验证码")
+    @UserLoginToken
     public Object checkVerify(@RequestParam String verifyInput, HttpSession session) {
         Object attr = session.getAttribute(RANDOM_CODE_ATTRIBUTE);
         if (attr != null) {
@@ -180,7 +181,7 @@ public class UserController {
                 return Result.success(true);
             }
         }
-        return Result.error(CodeMsg.OPERATION_FAILD.fillArgs(false));
+        return Result.error(CodeMsg.OPERATION_FAILED.fillArgs(false));
 
     }
 
